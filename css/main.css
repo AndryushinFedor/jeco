@@ -1,0 +1,64 @@
+@import "reset.css";
+body {
+    background-color:#080A0E;
+  }
+
+@font-face {
+    font-family: 'Mint Spirit',;
+    src: url('../fonts/MintSpirit-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Liter',;
+    src: url('../fonts/Liter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Mint Spirit';
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Liter';
+    color: #FFFFFF;
+}
+
+.header p {
+    position: absolute;
+    top: 28vw;
+    left: 48vw;
+    letter-spacing: 0.12em;
+    line-height: 152.8%;
+    font-size: 18px;
+    color: #DCFFE6;
+}
+
+.header h1 {
+    position: absolute;
+    top: 20vw;
+    left: 48vw;
+    font-size: 72px;
+}
+
+.logo {
+    padding: 5vw 0 0 5vw;
+}
+
+.group {
+    top: 13vw;
+}
+
+.gradientUpperImg {
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+}
+
+.arrow1 {
+    position: absolute;
+    left: 48vw;
+}
