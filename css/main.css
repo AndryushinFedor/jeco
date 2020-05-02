@@ -69,7 +69,7 @@ span {
     left: -0.139vw;
 }
 
-.yablokoImg {
+.bottle {
     position: absolute;
     top: 64.583vw;
     left: 57.639vw;
@@ -78,12 +78,14 @@ span {
 
 .gradientUpperImg {
     position: absolute;
+    width: 100%;
     top: 0vw;
     left: 0vw;
 }
 
 .gradientMainImg {
     position: absolute;
+    width: 100%;
     top: 47vw;
 }
 
@@ -104,20 +106,26 @@ span {
     left: 62.100vw;
 }
 
-.yablokoName {
+.apple {
+    position: absolute;
+    top: 83.681vw;
+    left: 22.181vw;
+}
+
+.Name {
     position: absolute;
     top: 79.083vw;
     right: 35.417vw;
 }
 
-.yablokoText {
+.Text {
     color: #FFDCB3;
     position: absolute;
     top: 85.681vw;
     right: 35.417vw;
 }
 
-.yablokoAbout {
+.About {
     position: absolute;
     top: 91.597vw;
     right: 35.417vw;
