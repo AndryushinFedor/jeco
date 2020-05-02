@@ -20,18 +20,35 @@ body {
 h1 {
     font-family: 'Mint Spirit';
     color: #FFFFFF;
+    font-size: 72px;
+    line-height: 152.8%;
+    letter-spacing: 0.12em;
+}
+
+h2 {
+    font-family: 'Mint Spirit';
+    font-size: 48px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
 }
 
 p {
     font-family: 'Liter';
     color: #FFFFFF;
+    letter-spacing: 0.12em;
+}
+
+span {
+    font-family: 'Liter';
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 0.12em;
 }
 
 .header p {
     position: absolute;
-    top: 28vw;
-    left: 48vw;
-    letter-spacing: 0.12em;
+    top: 28.472vw;
+    left: 48.611vw;
     line-height: 152.8%;
     font-size: 18px;
     color: #DCFFE6;
@@ -39,9 +56,8 @@ p {
 
 .header h1 {
     position: absolute;
-    top: 20vw;
-    left: 48vw;
-    font-size: 72px;
+    top: 20.139vw;
+    left: 48.611vw;
 }
 
 .logo {
@@ -49,16 +65,94 @@ p {
 }
 
 .group {
-    top: 13vw;
+    top: 13.194vw;
+    left: -0.139vw;
+}
+
+.yablokoImg {
+    position: absolute;
+    top: 64.583vw;
+    left: 57.639vw;
+    z-index: 2;
 }
 
 .gradientUpperImg {
     position: absolute;
     top: 0vw;
-    right: 0vw;
+    left: 0vw;
+}
+
+.gradientMainImg {
+    position: absolute;
+    top: 47vw;
 }
 
 .arrow1 {
     position: absolute;
-    left: 48vw;
+    left: 49vw;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 74.097vw;
+    left: 58.211vw;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 74.097vw;
+    left: 62.100vw;
+}
+
+.yablokoName {
+    position: absolute;
+    top: 79.083vw;
+    right: 35.417vw;
+}
+
+.yablokoText {
+    color: #FFDCB3;
+    position: absolute;
+    top: 85.681vw;
+    right: 35.417vw;
+}
+
+.yablokoAbout {
+    position: absolute;
+    top: 91.597vw;
+    right: 35.417vw;
+    font-size: 14px;
+}
+
+footer h1 {
+    position: absolute;
+    top: 146.528vw;
+    left: 18.403vw;
+}
+
+footer p {
+    position: absolute;
+    left: 22.431vw;
+    top: 155.556vw;
+    font-size: 24px;
+    line-height: 192.8%;
+}
+
+.phone {
+    position: absolute;
+    top: 156.6vw;
+    left: 18.85vw;
+}
+
+.mail {
+    position: absolute;
+    top: 159.8vw;
+    left: 18.85vw;
+}
+
+footer span {
+    position: absolute;
+    top: 174.167vw;    ;
+    left: 45vw;
+    padding-bottom: 3vw;
 }
