@@ -35,6 +35,36 @@ window.onload = function() {
     let grad=document.querySelector('.products');
     let buttonForward = document.querySelector('.arrowRight');
     let buttonBack = document.querySelector('.arrowLeft');
+    let div_prod = document.querySelector('.products');
+
+    function transp(elem, t, callback) {
+        let steps = 100;
+        let timer_transp = setInterval(function(){
+            elem.style.opacity = elem.style.opacity - 0.01;
+            console.log(elem.style.opacity);
+            steps--;
+            if (steps == 0) {
+                clearInterval(timer_transp);
+                callback.call(elem);
+            }
+        }, t);
+        
+    }
+    function transp_off(elem, t) {
+        /*let step = 100;
+        let timer_transp_off = setInterval(function(){
+            elem.style.opacity = elem.style.opacity + 0.01;
+            elem.style.transition = 'all 3s';
+            console.log(elem.style.opacity);
+            step--;
+            if (step == 0) {
+                clearInterval(timer_transp_off);
+                elem.style.opacity = 1;
+            }
+        }, t);*/
+        elem.style.opacity = 1;
+    }
+
     buttonBack.onclick = function () {
         if(i==0) {
             i=2;
@@ -42,11 +72,17 @@ window.onload = function() {
         else {
             i--;
         }
-        name.innerHTML = prods_set [i].name;
-        text.innerHTML = prods_set [i].text;
-        about.innerHTML = prods_set [i].about;
-        pict.src = prods_set [i].pict;
-        grad.style.backgroundImage = 'url(../' + prods_set[i].grad + ')';
+        console.log(div_prod);
+        transp(div_prod, 10, function() {
+            name.innerHTML = prods_set [i].name;
+            text.innerHTML = prods_set [i].text;
+            about.innerHTML = prods_set [i].about;
+            pict.src = prods_set [i].pict;
+            grad.style.backgroundImage = 'url(./' + prods_set[i].grad + ')';
+            transp_off(div_prod, 10);
+        });
+        
+
     }
 
     buttonForward.onclick = function () {
@@ -56,13 +92,28 @@ window.onload = function() {
         else {
             i++;
         }
-        name.innerHTML = prods_set [i].name;
-        text.innerHTML = prods_set [i].text;
-        about.innerHTML = prods_set [i].about;
-        pict.src = prods_set [i].pict;
+        transp(div_prod, 10, function() {
+            name.innerHTML = prods_set [i].name;
+            text.innerHTML = prods_set [i].text;
+            about.innerHTML = prods_set [i].about;
+            pict.src = prods_set [i].pict;
+            grad.style.backgroundImage = 'url(./' + prods_set[i].grad + ')';
+            transp_off(div_prod, 10);
+        });
     }
 
-
+let arrow = document.querySelector('.arrow1');
+arrow.onclick = function () {
+    let steps = 100;
+    let timer_scroll = setInterval(function(){
+        window.scrollBy(0,9);
+        steps--;
+        if (steps == 0) {
+            clearInterval(timer_scroll);
+        }
+    }, 10);
+    
+}
 
 
 

@@ -45,27 +45,30 @@ span {
     letter-spacing: 0.12em;
 }
 
+.d1 {
+    display: flex;
+    align-items: center;
+}
+
 .header p {
     line-height: 152.8%;
     font-size: 18px;
     color: #DCFFE6;
 }
 
-.header h1 {
-
+.header {
+    background-image: url(../pictures/upper.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 .logo {
     padding: 5vw 0 0 5vw;
 }
 
-.group {
-
-}
-
 .products {
-    height: 1000px;
-    margin-top: 200px;
+    height: 1200px;
+    margin-top: 350px;
     padding-left: 200px;
     display: flex;
     flex-wrap: nowrap;
@@ -76,6 +79,7 @@ span {
     background-position-y: -500px;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 .product {
@@ -112,12 +116,6 @@ span {
 
 }
 
-.apple {
-    position: absolute;
-    top: 83.681vw;
-    left: 22.181vw;
-}
-
 .name {
 
     margin-top: 8px;
@@ -129,10 +127,11 @@ span {
 }
 
 .about {
-
     font-size: 14px;
     margin-top: 20px;
 }
+
+
 
 footer h1 {
     position: absolute;
