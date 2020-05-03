@@ -46,18 +46,13 @@ span {
 }
 
 .header p {
-    position: absolute;
-    top: 28.472vw;
-    left: 48.611vw;
     line-height: 152.8%;
     font-size: 18px;
     color: #DCFFE6;
 }
 
 .header h1 {
-    position: absolute;
-    top: 20.139vw;
-    left: 48.611vw;
+
 }
 
 .logo {
@@ -65,15 +60,30 @@ span {
 }
 
 .group {
-    top: 13.194vw;
-    left: -0.139vw;
+
 }
 
-.bottle {
-    position: absolute;
-    top: 64.583vw;
-    left: 57.639vw;
-    z-index: 2;
+.products {
+    height: 1000px;
+    margin-top: 200px;
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: right;
+    padding-right: 50px;
+    background-image: url(../pictures/yabloko.svg);
+    background-position-y: -500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product {
+    width: 50%;
+}
+.bottle img{
+    margin-top: -150px;
+    
 }
 
 .gradientUpperImg {
@@ -90,20 +100,16 @@ span {
 }
 
 .arrow1 {
-    position: absolute;
-    left: 49vw;
+    margin-left: 50%;
 }
 
 .arrowLeft {
-    position: absolute;
-    top: 74.097vw;
-    left: 58.211vw;
+    margin-right: 15px;
+
 }
 
 .arrowRight {
-    position: absolute;
-    top: 74.097vw;
-    left: 62.100vw;
+
 }
 
 .apple {
@@ -112,24 +118,20 @@ span {
     left: 22.181vw;
 }
 
-.Name {
-    position: absolute;
-    top: 79.083vw;
-    right: 35.417vw;
+.name {
+
+    margin-top: 8px;
 }
 
-.Text {
+.text {
     color: #FFDCB3;
-    position: absolute;
-    top: 85.681vw;
-    right: 35.417vw;
+    margin-top: 10px;
 }
 
-.About {
-    position: absolute;
-    top: 91.597vw;
-    right: 35.417vw;
+.about {
+
     font-size: 14px;
+    margin-top: 20px;
 }
 
 footer h1 {
@@ -164,3 +166,14 @@ footer span {
     left: 45vw;
     padding-bottom: 3vw;
 }
+
+@media screen and (max-width: 375px) {
+    .logo {
+        width:26.667vw;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+      
