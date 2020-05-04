@@ -38,9 +38,9 @@ window.onload = function() {
     let div_prod = document.querySelector('.products');
 
     function transp(elem, t, callback) {
-        let steps = 100;
+        let steps = 50;
         let timer_transp = setInterval(function(){
-            elem.style.opacity = elem.style.opacity - 0.01;
+            elem.style.opacity = elem.style.opacity - 0.02;
             console.log(elem.style.opacity);
             steps--;
             if (steps == 0) {

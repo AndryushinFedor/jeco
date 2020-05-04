@@ -50,6 +50,14 @@ span {
     align-items: center;
 }
 
+.item p {
+    width: 620px;
+}
+
+.header h1 {
+    padding-bottom: 30px;
+}
+
 .header p {
     line-height: 152.8%;
     font-size: 18px;
@@ -67,7 +75,7 @@ span {
 }
 
 .products {
-    height: 1200px;
+    height: 1100px;
     margin-top: 350px;
     padding-left: 200px;
     display: flex;
@@ -84,95 +92,145 @@ span {
 
 .product {
     width: 50%;
+    padding-right: 50px;
 }
 .bottle img{
-    margin-top: -150px;
+    margin-top: -100px;
     
 }
 
-.gradientUpperImg {
-    position: absolute;
-    width: 100%;
-    top: 0vw;
-    left: 0vw;
-}
-
-.gradientMainImg {
-    position: absolute;
-    width: 100%;
-    top: 47vw;
-}
-
 .arrow1 {
-    margin-left: 50%;
+    margin-left: 41vw;
+    justify-content: center;
 }
 
 .arrowLeft {
     margin-right: 15px;
+    padding-bottom: 10px;
 
 }
 
 .arrowRight {
-
+    padding-bottom: 10px;
 }
 
 .name {
-
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .text {
     color: #FFDCB3;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .about {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-
+footer {
+    display: flexbox;
+    padding-left: 20%;
+    padding-bottom: 10%;
+}
 
 footer h1 {
-    position: absolute;
-    top: 146.528vw;
-    left: 18.403vw;
+    padding-bottom: 40px;
+
 }
 
 footer p {
-    position: absolute;
-    left: 22.431vw;
-    top: 155.556vw;
+
     font-size: 24px;
     line-height: 192.8%;
 }
 
 .phone {
-    position: absolute;
-    top: 156.6vw;
-    left: 18.85vw;
+    display: flex;
+    padding-right: 2vw;
 }
 
 .mail {
-    position: absolute;
-    top: 159.8vw;
-    left: 18.85vw;
+    display: flex;
+    padding-right: 1.4vw;
 }
 
-footer span {
-    position: absolute;
-    top: 174.167vw;    ;
-    left: 45vw;
+.info {
+    text-align: center;
+    margin-right: 14%;
+    font-size: 18px;
     padding-bottom: 3vw;
 }
 
 @media screen and (max-width: 375px) {
+
     .logo {
         width:26.667vw;
     }
 
+    .group {
+        display: none;
+    }
+
     h1 {
         font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 24px;
+
+    }
+
+    .header {
+        background-size: 100vw;
+    }
+
+    .d1 {
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+    
+    .arrow1 {
+        padding-top: 70px;
+    }
+
+    .products {
+        height: 700px;
+        padding-right: 50px;
+        padding-left: 0;
+        text-align: left;
+        background-position-y: -30px;
+    }
+
+    .bottle img{
+        width: 70px;
+        margin-top: 70px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .about {
+        font-size: 9px;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    .info {
+        padding-top: 50px;
+        font-size: 9px;
+        padding-bottom: 10px;
     }
 }
       
