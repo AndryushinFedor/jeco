@@ -102,18 +102,19 @@ window.onload = function() {
         });
     }
 
-let arrow = document.querySelector('.arrow1');
-arrow.onclick = function () {
-    let steps = 100;
-    let timer_scroll = setInterval(function(){
-        window.scrollBy(0,9);
-        steps--;
-        if (steps == 0) {
-            clearInterval(timer_scroll);
-        }
-    }, 10);
+    let arrow = document.querySelector('.arrow1');
+    arrow.onclick = function () {
+        let steps = 100;
+        let timer_scroll = setInterval(function(){
+            window.scrollBy(0,9);
+            steps--;
+            if (steps == 0) {
+                clearInterval(timer_scroll);
+            }
+        }, 10);
+        
+    }
     
-}
 
 
 
