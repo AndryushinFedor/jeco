@@ -315,6 +315,10 @@ a {
         width: 50vw;
     }
 
+    .name {
+        line-height: 111.8%;
+    }
+
     .item {
         padding-left: 7vw;
     }
@@ -369,7 +373,7 @@ a {
         text-align: left;
         padding-left: 10vw;
         background-position-x: -65vw;
-        background-position-y: -2vw;
+        background-position-y: 0vw;
         padding-bottom: 0vw;
         padding-top: 70px;
         background-size: 170vw;
