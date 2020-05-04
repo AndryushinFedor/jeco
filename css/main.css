@@ -5,15 +5,25 @@ body {
   }
 
   @font-face {
-    font-family: "MintSpirit-Bold";
-    src: url(".../fonts/MintSpirit-Bold.woff") format("woff"); /* Modern Browsers */
+    font-family: 'MintSpirit-Bold';
+    src: url('../fonts/MintSpirit-Bold.eot');
+    src: url('../fonts/MintSpirit-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MintSpirit-Bold.svg#MintSpirit-Bold') format('svg'),
+         url('../fonts/MintSpirit-Bold.ttf') format('truetype'),
+         url('../fonts/MintSpirit-Bold.woff') format('woff'),
+         url('../fonts/MintSpirit-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
-
-@font-face {
-    font-family: "Liter-Regular";
-    src: url(".../fonts/Liter-Regular.woff") format("woff"); /* Modern Browsers */
+  
+  @font-face {
+    font-family: 'Liter-Regular';
+    src: url('../fonts/Liter-Regular.eot');
+    src: url('../fonts/Liter-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Liter-Regular.svg#Liter-Regular') format('svg'),
+         url('../fonts/Liter-Regular.ttf') format('truetype'),
+         url('../fonts/Liter-Regular.woff') format('woff'),
+         url('../fonts/Liter-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
@@ -350,6 +360,7 @@ a {
         background-position-x: -65vw;
         background-position-y: -19vw;
         padding-bottom: 0vw;
+        padding-top: 70px;
         background-size: 170vw;
         
     }
