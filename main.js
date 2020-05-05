@@ -38,9 +38,9 @@ window.onload = function() {
     let div_prod = document.querySelector('.products');
 
     function transp(elem, t, callback) {
-        let steps = 50;
+        let steps = 10;
         let timer_transp = setInterval(function(){
-            elem.style.opacity = elem.style.opacity - 0.02;
+            elem.style.opacity = 1 - 0.1*(10-steps);
             console.log(elem.style.opacity);
             steps--;
             if (steps == 0) {
@@ -51,18 +51,16 @@ window.onload = function() {
         
     }
     function transp_off(elem, t) {
-        /*let step = 100;
+        let steps = 100;
         let timer_transp_off = setInterval(function(){
-            elem.style.opacity = elem.style.opacity + 0.01;
-            elem.style.transition = 'all 3s';
             console.log(elem.style.opacity);
-            step--;
-            if (step == 0) {
+            elem.style.opacity = 0.01 *(100-steps);
+
+           steps--;
+            if (steps == 0) {
                 clearInterval(timer_transp_off);
-                elem.style.opacity = 1;
             }
-        }, t);*/
-        elem.style.opacity = 1;
+        }, t);
     }
 
     buttonBack.onclick = function () {
@@ -72,13 +70,14 @@ window.onload = function() {
         else {
             i--;
         }
-        console.log(div_prod);
+        //console.log(div_prod);
+        grad.style.backgroundImage = 'url(./' + prods_set[i].grad + ')';
         transp(div_prod, 10, function() {
             name.innerHTML = prods_set [i].name;
             text.innerHTML = prods_set [i].text;
             about.innerHTML = prods_set [i].about;
             pict.src = prods_set [i].pict;
-            grad.style.backgroundImage = 'url(./' + prods_set[i].grad + ')';
+            
             transp_off(div_prod, 10);
         });
         
@@ -92,13 +91,18 @@ window.onload = function() {
         else {
             i++;
         }
-        transp(div_prod, 10, function() {
-            name.innerHTML = prods_set [i].name;
-            text.innerHTML = prods_set [i].text;
-            about.innerHTML = prods_set [i].about;
+        
+        name.innerHTML = prods_set [i].name;
+        text.innerHTML = prods_set [i].text;
+        about.innerHTML = prods_set [i].about;
+        transp(pict, 10, function() {
             pict.src = prods_set [i].pict;
             grad.style.backgroundImage = 'url(./' + prods_set[i].grad + ')';
-            transp_off(div_prod, 10);
+            transp_off(pict, 10);
+        });
+        transp(pict, 10, function() {
+            pict.src = prods_set [i].pict;
+            transp_off(pict, 10);
         });
     }
 
