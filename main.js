@@ -51,10 +51,10 @@ window.onload = function() {
         
     }
     function transp_off(elem, t) {
-        let steps = 100;
+        let steps = 50;
         let timer_transp_off = setInterval(function(){
             console.log(elem.style.opacity);
-            elem.style.opacity = 0.01 *(100-steps);
+            elem.style.opacity = 0.02 *(50-steps);
 
            steps--;
             if (steps == 0) {
